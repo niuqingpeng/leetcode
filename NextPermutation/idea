@@ -1,0 +1,15 @@
+Before presenting the algorithm, we review and analyze some examples to understand how the algorithm work. 
+1) 2863|(7)---28673
+2) 4|87(6)3---63487
+3) 2|876(3)---32768
+
+a) Start from the last postion i of array to find where the value decrease. 
+'|' gives the postion where increasement stops from reverse order. 
+0 1234
+4|8763
+We find position 0 where 4<8.
+b) Reverse for postion i+1 to end. 
+4|3678
+c) binary search to find postion where value<4 and swap.
+swap 4 and 3. 
+34678
